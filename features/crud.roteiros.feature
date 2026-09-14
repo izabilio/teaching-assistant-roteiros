@@ -18,3 +18,8 @@ Scenario: Failing to update a routine that does not exist
     Given I am on the routine management page
     When I try to remove a routine that does not exist
     Then I should see an error message
+
+    Scenario: Updating a routine successfully
+    Given I am on the routine management page
+    When I update an existing routine
+    Then I should see the updated routine
