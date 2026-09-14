@@ -23,3 +23,8 @@ Scenario: Failing to update a routine that does not exist
     Given I am on the routine management page
     When I update an existing routine
     Then I should see the updated routine
+
+    Scenario: Removing a routine successfully
+    Given I am on the routine management page
+    When I remove an existing routine
+    Then I should no longer see the routine
