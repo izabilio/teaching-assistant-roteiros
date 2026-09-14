@@ -38,3 +38,8 @@ Scenario: Viewing a routine details
     Given I am on the routine management page
     When I select an existing routine
     Then I should see the routine details
+
+    Scenario: Viewing all routines
+    Given I am on the routine management page
+    When I view the routines
+    Then I should see the list of routines
