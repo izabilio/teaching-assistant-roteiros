@@ -48,3 +48,9 @@ Scenario: Viewing a routine details
     Given I am on the routine management page
     When I search for a routine
     Then I should see the matching routine
+
+Scenario: Marking a routine as completed
+    Given I am on the routine management page
+    When I mark an existing routine as completed
+    Then I should see the routine marked as completed
+    And I should see the completion confirmation message
