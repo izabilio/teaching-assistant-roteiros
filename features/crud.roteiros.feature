@@ -43,3 +43,8 @@ Scenario: Viewing a routine details
     Given I am on the routine management page
     When I view the routines
     Then I should see the list of routines
+
+    Scenario: Searching for a routine
+    Given I am on the routine management page
+    When I search for a routine
+    Then I should see the matching routine
