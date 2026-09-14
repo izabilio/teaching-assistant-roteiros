@@ -5,6 +5,7 @@ Feature: Routines management
 
  Scenario: Registering a new routine successfully
   Given I am on the routine creation page
-  When I fill in the title "Git Tutorial" and the questions
+  When I fill in the title "Git Tutorial" and the answers
   And I click the "Save" button
   Then I should see the confirmation message "Routine successfully created"
+
