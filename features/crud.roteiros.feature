@@ -33,3 +33,8 @@ Scenario: Failing to update a routine that does not exist
     When I remove an existing routine
     Then I should no longer see the routine
     And I should see the confirmation message "Routine successfully removed"
+
+Scenario: Viewing a routine details
+    Given I am on the routine management page
+    When I select an existing routine
+    Then I should see the routine details
