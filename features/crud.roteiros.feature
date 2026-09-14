@@ -9,3 +9,7 @@ Feature: Routines management
   And I click the "Save" button
   Then I should see the confirmation message "Routine successfully created"
 
+Scenario: Failing to update a routine that does not exist
+    Given I am on the routine management page
+    When I try to update a routine that does not exist
+    Then I should see an error message
